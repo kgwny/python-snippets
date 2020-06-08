@@ -2,7 +2,7 @@ import os
 
 test_file = "test.txt"
 
-# make new file and write sentence
+# make new file
 if not os.path.exists(test_file):
     # w means write
     f = open(test_file, "w")
@@ -10,9 +10,6 @@ if not os.path.exists(test_file):
     f.close()
 else:
     print("new file is alrady exist")
-
-# append new sentence
-if os.path.exists(test_file):
     # a means append
     f = open(test_file, "a")
     f.write("How are you doing?\n")
@@ -20,19 +17,6 @@ if os.path.exists(test_file):
 
 # read file
 if os.path.exists(test_file):
-    # a means append
+    # r means read
     f = open(test_file, "r")
-    print(f.read())
-
-fruit = """apple
-banana
-cherry
-"""
-
-# auto close, write file
-with open(test_file, "w") as f:
-    f.write(fruit)
-
-# auto close, read file
-with open(test_file, "r") as f:
     print(f.read())
