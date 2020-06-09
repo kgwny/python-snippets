@@ -1,5 +1,4 @@
 import os
-import shutil
 
 target_dir = "tmp"
 
