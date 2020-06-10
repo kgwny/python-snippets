@@ -1,4 +1,3 @@
-
 word = "hoge"
 
 if word == "hoge":
@@ -12,3 +11,9 @@ else:
 if not word == "tako":
     print("word is not tako")
 
+# 真偽値
+if True:
+    print(str(True))
+
+if not False:
+    print("not " + str(False))
