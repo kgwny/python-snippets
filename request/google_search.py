@@ -9,6 +9,9 @@ params = {
 }
 
 # get response
-response = requests.get(url, params=params)
+r = requests.get(url, params=params)
 
-print(response)
+print(r.status_code)
+print(r.headers["content-type"])
+print(r.encoding)
+print(r.text)
