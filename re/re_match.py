@@ -3,7 +3,7 @@ import re
 content = r"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 pattern = "abc"
 
-# regular expressions
+# regular match
 result = re.match("abc", content)
 
 if result:
