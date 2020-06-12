@@ -5,9 +5,14 @@ import cgitb
 cgitb.enable()
 cgitb.enable(display=0, logdir="/path/to/logdir")
 
-print("Content-Type: text/html")    # HTML is following
-print()                             # blank line, end of headers
-
-print("<TITLE>CGI script output</TITLE>")
-print("<H1>This is my first CGI script</H1>")
-print("Hello, world!")
+print("Content-Type: text/html")
+print()
+print("<html>")
+print("<head>")
+print("<title>python cgi script test</title>")
+print("</head>")
+print("<body>")
+print("<h1>Hello, world!</h1>")
+print("こんにちは、世界！")
+print("</body>")
+print("</html>")
