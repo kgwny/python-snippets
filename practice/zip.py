@@ -1,6 +1,6 @@
 import os
 import pathlib
-from zipfile import ZipFile
+import zipfile
 
 src_dir = 'src'
 
@@ -13,8 +13,8 @@ src_file = 'hoge.txt'
 target_path = pathlib.Path(src_dir + '/' + src_file)
 target_path.touch()
 
-target_zip = 'washigasodateta.zip'
+target_zip = 'archive.zip'
 
 # create zip
-#with ZipFile(target_zip, 'w') as myzip:
-#    myzip.write(src_dir)
+with zipfile.ZipFile(target_zip, 'w', compression=zipfile.ZIP_DEFLATED) as myzip:
+    myzip.write('src/hoge.txt', arcname='src/hoge.txt')
