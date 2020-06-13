@@ -4,13 +4,13 @@ json_text = '{"menu1":{"name": "hamburger","price": 110,"cal": 256},"menu2":{"na
 
 json_dict = json.loads(json_text)
 
-print("menu1の情報：{}".format(json_dict["menu1"]))
+print('menu1の情報：{}'.format(json_dict['menu1']))
 # menu1の情報：{'name': 'hamburger', 'price': 110, 'cal': 256}
 
-print("menu2のcal情報:{}".format(json_dict["menu2"]["cal"]))
+print('menu2のcal情報:{}'.format(json_dict['menu2']['cal']))
 # menu2のcal情報:525
 
-print("menu3のprice情報：{}".format(json_dict["menu3"]["price"]))
+print('menu3のprice情報：{}'.format(json_dict['menu3']['price']))
 # menu3のprice情報：340
 
 print(json_dict)

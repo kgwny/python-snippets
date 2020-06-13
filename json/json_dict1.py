@@ -5,9 +5,9 @@ import json
 
 json_text = '''
 {
-    "foo":"hoge",
-    "bar":"ika",
-    "baz":"tako"    
+    "foo": "hoge",
+    "bar": "ika",
+    "baz": "tako"    
 }
 '''
 
@@ -19,10 +19,10 @@ print(type(json_dict))
 print(json_dict)
 #json_dict:{'foo': 'hoge', 'bar': 'ika', 'baz': 'tako'}
 
-print(type(json_dict["foo"]))
+print(type(json_dict['foo']))
 #<class 'str'>
 
-print(json_dict["foo"])
+print(json_dict['foo'])
 #hoge
 
 json_str = json.dumps(json_dict)

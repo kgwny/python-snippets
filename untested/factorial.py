@@ -1,3 +1,4 @@
+
 # 階乗
 print(factorial(4))
 

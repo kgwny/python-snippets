@@ -1,9 +1,9 @@
 
-var = "hoge"
+var = 'hoge'
 
-if var == "hoge":
-    print("hoge")
-elif var == "ika":
-    print("ika")
+if var == 'hoge':
+    print('hoge')
+elif var == 'ika':
+    print('ika')
 else:
-    print("etc")   
+    print('etc')   

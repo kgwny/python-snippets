@@ -1,6 +1,6 @@
 import urllib.request
 
-url = "https://www.google.com/"
+url = 'https://www.google.com/'
 
 # urlopen
 res = urllib.request.urlopen(url=url)

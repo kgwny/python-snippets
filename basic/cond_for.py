@@ -1,4 +1,4 @@
-message = "Hello Python!"
+message = 'Hello Python!'
 
 for ch in message:
     print(ch)

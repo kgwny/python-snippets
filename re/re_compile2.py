@@ -1,9 +1,9 @@
 import re
 
-content = r"1234567890"
+content = r'1234567890'
 
 # \d 任意の数字[0-9]
-pattern = "\d"
+pattern = '\d'
 
 # regular expressions
 repatter = re.compile(pattern)

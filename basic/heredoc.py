@@ -1,8 +1,8 @@
 
 # 文字列連結
-msg = "hoge\n"
-msg += "ika\n"
-msg += "tako\n"
+msg = 'hoge\n'
+msg += 'ika\n'
+msg += 'tako\n'
 
 print(msg)
 

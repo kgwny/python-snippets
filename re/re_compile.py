@@ -1,7 +1,7 @@
 import re
 
-content = r"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-pattern = "abc"
+content = r'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+pattern = 'abc'
 
 # regular expressions
 repatter = re.compile(pattern)

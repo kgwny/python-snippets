@@ -6,6 +6,6 @@ def timer(secs):
     for i in range(0, secs):
         print(i)
         sleep(1)
-    print("タイムオーバー")
+    print('time over')
 
 timer(limit)

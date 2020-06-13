@@ -1,13 +1,13 @@
 import requests
 
-TARGET_URL = "https://slack.com/api/channels.history"
-CHANNEL_ID = ""
-TOKEN = ""
+TARGET_URL = 'https://slack.com/api/channels.history'
+CHANNEL_ID = ''
+TOKEN = ''
 
 def fetch_text():
     payload = {
-        "channel": CHANNEL_ID,
-        "token": TOKEN
+        'channel': CHANNEL_ID,
+        'token': TOKEN
     }
     response = requests.get(TARGET_URL, params=payload)
     json_data = response.json()
@@ -16,5 +16,5 @@ def fetch_text():
     print([msg['text'] for msg in msgs])
     return [msg['text'] for msg in msgs]
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     fetch_text()
