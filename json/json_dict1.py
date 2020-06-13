@@ -1,5 +1,8 @@
 import json
 
+# @see
+# https://www.json.org/
+
 json_text = '''
 {
     "foo":"hoge",
