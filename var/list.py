@@ -1,5 +1,10 @@
 
+# リスト型
 list_1 = [1, 2]
+
+print(type(list_1))
+# <class 'list'>
+
 print(list_1)
 # [1, 2]
 

@@ -14,3 +14,12 @@ line3
 '''
 
 print(msg)
+
+# print文にも適用可能
+print('''foo
+bar
+baz''')
+
+print("""hoge
+ika
+tako""")
