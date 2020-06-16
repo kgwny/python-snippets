@@ -1,2 +1,3 @@
 .DS_Store
-/basic/*.txt
+/*/*.txt
+/*/__pycache__
