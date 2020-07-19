@@ -4,6 +4,7 @@ TARGET_URL = 'https://slack.com/api/channels.history'
 CHANNEL_ID = ''
 TOKEN = ''
 
+# slackの特定のチャンネルから文字列を抽出する
 def fetch_text():
     payload = {
         'channel': CHANNEL_ID,
