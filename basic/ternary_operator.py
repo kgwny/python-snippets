@@ -8,6 +8,9 @@
 def ternary_operator(boolean):
     return 'OK' if boolean == True else 'NG'
 
+def hoge(condition):
+    return 1 if condition else 2
+
 boolean = bool(1)
 print(ternary_operator(boolean))
 # OK
@@ -15,3 +18,9 @@ print(ternary_operator(boolean))
 boolean = bool(0)
 print(ternary_operator(boolean))
 # NG
+
+condition = True
+print(hoge(condition))
+
+condition = False
+print(hoge(condition))
