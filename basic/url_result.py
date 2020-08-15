@@ -12,7 +12,7 @@ print(url)
 
 # retrieve URL and  write results to filename
 
-filename = "result.txt"
+filename = "./tmp/result.txt"
 
 urllib.request.urlretrieve(url, filename)
 
