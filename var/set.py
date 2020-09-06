@@ -1,5 +1,5 @@
 
-# set
+# set：集合
 color = set(['red', 'blue', 'yellow'])
 
 print(type(color))
