@@ -1,4 +1,4 @@
-class Example():
+class Example:
 
     # __init__はコンストラクタ
     def __init__(self, a, b, c):

@@ -46,13 +46,14 @@ class Manager(Employee):
             print('対応言語：', emp.prog_lang)
 
 
-dev_1 = Programmer('Tanaka', 'Tarou', 50000, 'Python')
-dev_2 = Programmer('Oshima', 'Takayuki', 60000, 'PHP')
-mgr_1 = Manager('Adam', 'Jozee', 60000)
+dev_1 = Programmer('Tanaka', 'Taro', 50000, 'Python')
+dev_2 = Programmer('Yamada', 'Jiro', 60000, 'Java')
+mgr_1 = Manager('Shima', 'Kousaku', 100000)
 print(mgr_1.fullname())
 print(mgr_1.email)
 print('基本年収（$）：', mgr_1.pay)
 mgr_1.apply_raise()
 print('年間の役職手当（$）：', mgr_1.pay)
 mgr_1.add_emp(dev_1)
+mgr_1.add_emp(dev_2)
 mgr_1.print_emps()
