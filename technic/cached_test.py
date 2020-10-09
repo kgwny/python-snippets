@@ -14,7 +14,7 @@ class Hoge(object):
     def value(self):
         import time
         time.sleep(10)
-        return 'ちょー重たい処理だったぜ'
+        return 'What a heavy process!'
 
 hoge = Hoge()
 print(hoge.value)
