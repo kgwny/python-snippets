@@ -14,7 +14,7 @@ def check_element_count(target_list):
 # 入れ子リスト要素の重複チェック
 def has_duplicate(target_list):
     tmp = []
-    unique_list = [x for x in target_list if x not in tmp and not tmp.append(x)]
+    unique_list = [target for target in target_list if target not in tmp and not tmp.append(target)]
     return len(target_list) != len(unique_list)
 
 def read_file(target_file):
