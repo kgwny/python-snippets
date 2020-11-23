@@ -8,6 +8,7 @@ class TestParser(HTMLParser):
         self.url = ""
  
     def handle_starttag(self, tag, attrs):
+        # aタグのhref属性に設定されている値を取り出す
         if tag == "a":
             attrs = dict(attrs)
             if 'href' in attrs:
