@@ -9,6 +9,7 @@ class MyHTMLParser(HTMLParser):
         self.found_headline = False
         self.headline_texts = []
 
+    # 開始タグに含まれる要素の値を抽出する
     def handle_starttag(self, tag, attrs):
         if re.match('^h[1-9]$', tag):
             self.found_headline = True
@@ -18,12 +19,12 @@ class MyHTMLParser(HTMLParser):
                 self.url = attrs['href']
                 self.found_headline = True
 
+    # タグに括られた値を抽出する
     def handle_data(self, data):
         if self.found_headline:
             if self.url:
                 self.headline_texts.append(self.url)
-            else:
-                self.headline_texts.append(data)
+            self.headline_texts.append(data)
             self.found_headline = False
 
 parser = MyHTMLParser()

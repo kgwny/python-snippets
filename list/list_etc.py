@@ -10,3 +10,4 @@ print(array)
 arr_str = ''.join(array)
 print(arr_str)
 # Hello World
+
