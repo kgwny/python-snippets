@@ -20,3 +20,4 @@ parser = MyHTMLParser()
 parser.feed('<html><head><title>test</title></head>'
             '<body><h1>header</h1></body></html>')
 print(parser.headline_texts[0])
+# header

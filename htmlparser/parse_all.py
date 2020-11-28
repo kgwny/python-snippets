@@ -31,3 +31,4 @@ parser = MyHTMLParser()
 parser.feed('<html><head><title>test</title></head>'
             '<body><h1>header</h1><a href="http://example.com">example</a></body></html>')
 print(parser.headline_texts)
+# ['header', 'http://example.com', 'example']

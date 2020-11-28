@@ -13,3 +13,15 @@ class MyHTMLParser(HTMLParser):
 parser = MyHTMLParser()
 parser.feed('<html><head><title>test</title></head>'
             '<body><h1>header</h1></body></html>')
+# start tag: html
+# start tag: head
+# start tag: title
+# data: test
+# end tag: title
+# end tag: head
+# start tag: body
+# start tag: h1
+# data: header
+# end tag: h1
+# end tag: body
+# end tag: html

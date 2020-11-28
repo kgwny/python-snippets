@@ -18,3 +18,4 @@ class TestParser(HTMLParser):
 parser = TestParser()
 parser.feed('<html><head><title>test</title></head>'
             '<body><h1>header</h1></body></html>')
+# test
