@@ -1,8 +1,8 @@
-import csv, os
+import os, csv
 
 # delimiterが異なっているだけであり、tsvも扱うことが可能
 
-target_file = 'tmp.tsv'
+target_file = './tmp/target.tsv'
 
 text = 'title1\ttitle2\ttitle3\nword1\tword2\tword3'
 
@@ -18,4 +18,4 @@ with open(target_file, 'r') as f:
         print(row)
 
 # remove file
-os.remove(target_file)
+# os.remove(target_file)

@@ -1,6 +1,6 @@
-import csv, os
+import os, csv
 
-target_file = 'tmp.csv'
+target_file = './tmp/target.csv'
 
 text = 'title1,title2,title3\nword1,word2,word3'
 
@@ -16,4 +16,4 @@ with open(target_file, 'r') as f:
         print(row)
 
 # remove file
-os.remove(target_file)
+# os.remove(target_file)
