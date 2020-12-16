@@ -1,3 +1,4 @@
+# カプセル化
 class Hoge:
     def __init__(self):
         self.name = ''
