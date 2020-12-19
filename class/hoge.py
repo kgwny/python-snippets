@@ -5,5 +5,8 @@ class Hoge:
         self.fuga = fuga
         self.piyo = piyo
 
+    def print(self):
+        print(self.hoge + ',' + str(self.fuga) + ',' + str(self.piyo))
+
 hoge = Hoge("hoge", 4649, False)
-print(hoge)
+hoge.print()
