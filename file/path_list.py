@@ -3,8 +3,10 @@ import os
 path_list = []
 
 def recursive_path_check(path):
+
     print(path)
     path_list.append(path)
+
     if os.path.isdir(path):
         dirs = os.listdir(path)
         for dir in dirs:
@@ -12,4 +14,5 @@ def recursive_path_check(path):
 
 root_path = '.'
 recursive_path_check(root_path)
+path_list.sort
 # print(path_list)

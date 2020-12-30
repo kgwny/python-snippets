@@ -1,7 +1,7 @@
 import os
 import shutil
 
-# ./input配下にあるディレクトリ、ファイルを./output配下へコピーする
+# ./input配下にあるディレクトリとファイルを./output配下へコピーする
 
 path_list = []
 
@@ -21,7 +21,7 @@ path_list.sort()
 # print(path_list)
 
 for path in path_list:
-    new_path = path.replace('input', 'output')
+    new_path = path.replace(input_path, output_path)
 
     if os.path.isdir(path):
         if not os.path.isdir(new_path):
