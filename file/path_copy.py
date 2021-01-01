@@ -24,7 +24,7 @@ for path in path_list:
     new_path = path.replace(input_path, output_path)
 
     if os.path.isdir(path):
-        if not os.path.isdir(new_path):
+        if not os.path.exists(new_path):
             os.mkdir(new_path)
     else:
         shutil.copyfile(path, new_path)
