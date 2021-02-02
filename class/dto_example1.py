@@ -11,7 +11,7 @@ class Dto:
 
 dto_list = []
 
-# listへ設定するdtoはすべて個別のオブジェクトを使用すること
+# listの要素へ設定するdtoはすべて固有のオブジェクトを使用すること
 b1 = Dto()
 b1.set_dto(1, 'note', 108)
 dto_list.append(b1)
