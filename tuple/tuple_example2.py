@@ -2,6 +2,8 @@
 empty_tuple = ()
 print(type(empty_tuple))
 # <class 'tuple'>
+print(empty_tuple)
+# ()
 
 # 要素がひとつだけのタプル
 one_element_tuple = ('something')
