@@ -1,3 +1,4 @@
+# 定数クラス
 class _const:
     class ConstError(TypeError):
         pass
@@ -8,10 +9,4 @@ class _const:
         self.__dict__[name] = value
 
 import sys
-
 sys.modules[__name__] = _const()
-const = _const()
-const.ika = 'ika' # ok
-const.hoge = 'hoge' # ok
-const.fuga = 'hoge' # ok
-# const.hoge = 'fuga' # ng 上書き不可

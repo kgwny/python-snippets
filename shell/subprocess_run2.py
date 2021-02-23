@@ -3,6 +3,7 @@ from subprocess import PIPE
 
 # 自作のシェルスクリプトを呼び出す
 
-proc = subprocess.run(['sh', 'aa.sh'], stdout=PIPE, stderr=PIPE)
+AA_SH = 'aa.sh'
+proc = subprocess.run(['sh', AA_SH], stdout=PIPE, stderr=PIPE)
 print(proc.stdout.decode('utf-8'))
 print(proc.stderr.decode('utf-8'))
