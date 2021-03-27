@@ -1,6 +1,6 @@
 import datetime
 
-str_date = '2021-03-31'
+str_date = '2021-02-10'
 target_date = [int(s) for s in str_date.split('-')]
 print(target_date)
 
