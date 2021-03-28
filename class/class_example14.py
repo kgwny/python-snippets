@@ -17,8 +17,10 @@ print(c.dict)
 # {}
 
 c.__setitem__(0, 'a')
+c.__setitem__(1, 'b')
+c.__setitem__(2, 'c')
 print(c.dict)
-# {0: 'a'}
+# {0: 'a', 1: 'b', 2: 'c'}
 
 value = c.__getitem__(0)
 print(value)
