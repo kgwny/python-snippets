@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<body>
+  <form>
+    <input type="submit" value="start" formaction="/start">
+  </form>
+  {% if user_info == None %}
+    <p>user_infoがからっぽ</p>
+  {% else %}
+    <p>user_info:{{user_info}}</p>
+  {% endif %}
+</body>
+
+</html>
