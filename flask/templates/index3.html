@@ -1,0 +1,43 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form">
+        <h2>last name</h2>
+        <input type="text" id="lastname">
+        <h2>first name</h2>
+        <input type="text" id="firstname">
+        <button type="submit" name="button">send</button>
+    </form>
+    <div id="output"></div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+          // ①formのsubmitボタンをクリック
+          $('#form').on('submit',function(event){
+            // ②Ajax通信
+            $.ajax({
+              data : {
+                // ③form内inputの値、リクエスト(POST or GET),リクエスト先のURLを記述
+                firstname : $('#firstname').val(),
+                lastname : $('#lastname').val(),
+              },
+              type : 'POST',
+              url : '/'
+            })
+            // ④formの下に結果を表示
+            .done(function(data){
+              $('#output').text(data.output).show();
+            });
+            event.preventDefault();
+          });
+        });
+    </script>
+</body>
+</html>
