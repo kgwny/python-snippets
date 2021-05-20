@@ -1,0 +1,10 @@
+pip freezeをリダイレクト>でファイルに出力し、
+そのファイルを使って元の環境と同じバージョンのパッケージを別環境に一括でインストールすることができる。
+
+1.requirements.txtをファイルに出力する
+
+$ pip freeze > requirements.txt
+
+2.requirements.txtを別の環境にコピーして一括インストールする
+
+$ pip install -r requirements.txt
