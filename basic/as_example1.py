@@ -1,7 +1,7 @@
 # long
 import math
-math.sqrt(10)
+print("math.sqrt(10) = ", math.sqrt(10))
 
 # short
 import math as m
-m.sqrt(10)
+print("m.sqrt(10) = ", m.sqrt(10))
